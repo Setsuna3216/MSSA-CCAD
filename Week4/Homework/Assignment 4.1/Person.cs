@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Assignments4._1
+namespace Assignment_4._1
 {
     internal class Person
     {
