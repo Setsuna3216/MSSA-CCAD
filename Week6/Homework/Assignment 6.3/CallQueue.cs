@@ -8,18 +8,22 @@ namespace Assignment_6._3
     {
         Caller front;
         Caller rear;
+        int size;
         public void Enqueue(Caller newCaller)
         {
             if (front == null)
             {
                 front = newCaller;
                 rear = newCaller;
+                
             }
             else
             {
                 rear.next = newCaller;
                 rear = newCaller;
+                
             }
+            size++;
 
         }
         public void Dequeue()
@@ -36,6 +40,7 @@ namespace Assignment_6._3
                 {
                     rear = null;
                 }
+                size--;
             }
 
         }
@@ -49,7 +54,7 @@ namespace Assignment_6._3
 
                 current = current.next;
             }
-
+            Console.WriteLine($"CallQueue Size: {size}");
         }
     }
 }
