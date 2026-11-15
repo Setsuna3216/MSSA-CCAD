@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BookInventory.Api/BookInventory.Api.csproj" />
+  <Project Path="BookInventory.Client/BookInventory.Client.csproj" />
+</Solution>
